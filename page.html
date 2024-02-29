@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#p1">Perfil 01</a></li>
+            <li><a href="#p2">Perfil 02</a></li>
+            <li><a href="#tec">Tecnologias</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </header>
+    <div id="p1" class="profile01">
+        <div class="img_perfil">
+            <img class="foto_perfil" src="https://avatars.githubusercontent.com/u/158215075?v=4" alt="">
+        </div>
+        <div class="profile_info">
+            <div class="profile_name">
+                <h1>Guilherme Araújo de Almeida</h1>
+            </div>   
+            <div class="profile_description">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem aut quasi aspernatur iure eveniet consectetur nisi quis. Asperiores neque sunt facilis, deserunt aliquam veniam, ut corrupti mollitia commodi dolorem ducimus?</p>
+            </div> 
+        </div>
+    </div>
+    <div id="p2" class="profile02">
+        <div class="img_perfil">
+            <img class="foto_perfil" src="https://avatars.githubusercontent.com/u/158215075?v=4" alt="">
+        </div>
+        <div class="profile_info">
+            <div class="profile_name">
+                <h1>Guilherme Araújo de Almeida</h1>
+            </div>   
+            <div class="profile_description">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet et numquam, at illo nam quidem hic suscipit repellendus quisquam qui, totam laudantium culpa distinctio cupiditate sapiente deleniti odio, quam eaque.</p>
+            </div> 
+        </div>
+    </div>
+    <div id="tec" class="tec">
+        <p>Tecnologias</p>
+        <h2>Tecnologias</h2>
+        <img src="C:\Users\Aluno\Desktop\iconesTecno.jpg" alt="Icones" width="400px" height="auto" style="border-radius:20px ;">
+        <div class="flex-cards">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium doloribus porro sed et deleniti, accusamus natus ut iure doloremque atque, reprehenderit illo sunt temporibus? Delectus earum quisquam minus blanditiis?</p>
+            </div>
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum provident soluta quas tempore aspernatur modi et laborum deleniti porro natus ipsa saepe nam non laudantium iusto accusamus, id nihil ut.</p>
+            </div>
+            <div class="card">
+                <h3>JAVASCRIPT</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eos fugiat similique consectetur, labore rem recusandae consequuntur a, neque dignissimos eligendi vitae asperiores, delectus vero eveniet? Ut tempora impedit inventore!</p>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <div>
+            <div>
+                <h3>Contato</h3>
+                <p>Mande uma mensagem para nossa equipe!</p>
+            </div>
+            <div>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea type="text" id="mensagem"></textarea>
+                </div>
+            </div>
+            <button onclick="conferirMesagemWhatsApp()">Conferir dados inseridos</button>
+        </div>
+        <div>
+            <div>
+                <p>Nome: <span id="confNome"></span></p>
+                <p>Mensagem: <span id="confMsg"></span></p>
+            </div>
+            <button onclick="enviar()">ZAP</button>
+        </div>
+    </div>
+</body>
+</html>
