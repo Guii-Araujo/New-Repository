@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Excel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+</head>
+<body>
+    <h1>Tabela para Excel</h1>
+    <div>
+        <input type="text" id="nome" placeholder="Insira uma descrição">
+        <input type="number" id="valor" placeholder="Insira um valor do produto">
+        <input type="number" id="quantidade" placeholder="Insira uma quantidade">
+    </div>
+    <br>
+    <div>
+        <button onclick="addItem()">Adicionar a tabela 📈📊</button>
+    </div>
+    <br>
+    <div>
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Valor</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody class="BodyDaTabela">
+
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div>
+        <button onclick="exportarParaExcel()">Exportar Para Excel ✔</button>
+    </div>
+
+    <div>  
+        <input type="text" id="NomeRemover" placeholder ="Nome para Remover">
+        <button onclick="removerItem()">Remover ❌</button>
+    </div>
+</body>
+</html>
